@@ -1,0 +1,10 @@
+<h1>Dashboard</h1>
+<a href="/dashboard/new">Create New Post</a>
+
+{{#each posts}}
+<div>
+    <h3>{{this.title}}</h3>
+    <a href="/dashboard/post/{{this.id}}/edit">Edit</a>
+    <a href="/dashboard/post/{{this.id}}/delete">Delete</a>
+</div>
+{{/each}}
